@@ -1,12 +1,12 @@
 # HIRA Audit Viewer
-### 심평원 EDI 전자문서 청구파일 기반 산부인과 특화 사전심사 프로그램
+### 심평원 EDI B02 청구파일 기반 산부인과 특화 사전심사 프로그램
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey)]()
 
 ---
 
-심평원 EDI 전자문서 형식의 진료비 청구파일을 파싱하여 삭감·조정 위험 항목을 청구 전에 자동 검출하는 사전심사 도구입니다.  
+심평원 EDI B02 형식의 진료비 청구파일을 파싱하여 삭감·조정 위험 항목을 청구 전에 자동 검출하는 사전심사 도구입니다.  
 산부인과 외래 청구에 특화되어 있으며, 임상 현장과 EMR QC 실무 경험을 바탕으로 실제 삭감 사례를 직접 로직으로 구현했습니다.
 
 ---
@@ -97,7 +97,7 @@ pyinstaller --windowed --name "HIRA사전심사" review.py
 
 <br>
 
-1. **EDI 청구파일 불러오기** 버튼으로 파일 로드
+1. **EDI 청구파일(.B02) 불러오기** 버튼으로 파일 로드
 2. 좌측 수진자 목록에서 환자 선택 → 우측에 레코드별 내역 표시
 3. **사전심사 실행** 버튼 클릭
 4. 하단 사전심사 결과 패널에서 삭감 위험 항목 확인
@@ -126,7 +126,7 @@ pyinstaller --windowed --name "HIRA사전심사" review.py
 
 <br>
 
-- 심평원 EDI 전자문서 작성요령
+- 심평원 EDI B02 전자문서 작성요령
 - 초음파 검사의 급여기준 고시 제2019-166호
 - 모자의료 진료협력 시범사업 Grade I/II/III 분류체계
 
